@@ -3,8 +3,11 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 import io
+import os
 
-day_df = pd.read_csv("..\data\day.csv")
+current_dir = os.path.dirname(__file__)
+file_path = os.path.join(current_dir, "..", "data", "day.csv")
+day_df = pd.read_csv(file_path)
 
 # Sidebar
 with st.sidebar:
