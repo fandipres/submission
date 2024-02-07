@@ -4,8 +4,7 @@ import seaborn as sns
 import streamlit as st
 import io
 
-day_df = pd.read_csv("../data/day.csv")
-hour_df = pd.read_csv("../data/hour.csv")
+day_df = pd.read_csv("day.csv")
 
 # Sidebar
 with st.sidebar:
